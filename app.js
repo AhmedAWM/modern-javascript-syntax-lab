@@ -52,3 +52,50 @@ const myCar = { ...anotherCar, make: 'Honda', model: 'Civic' };
 
 console.log('Another car: ', anotherCar);
 console.log('My car: ', myCar);
+
+
+
+// Exercise 6
+const propertyName = 'username';
+const userProfile = {};
+userProfile[propertyName] = 'ahmed';
+
+console.log(userProfile);
+
+
+
+// Exercise 7
+// find it in importingFile.js & exportingFile.js
+
+
+
+// Exercise 8
+function describeAnimal(noun='cat', adjective='orange') {
+  console.log(`The ${ noun } is ${ adjective }.`);
+}
+describeAnimal() // Default value
+console.log(describeAnimal('dog', 'black')); // Supplied value
+
+
+
+// Exercise 9
+const pizza = 'tasty';
+
+console.log(pizza === 'tasty' ? 'Yum' : 'Yuck');
+
+
+
+// Exercise 10
+const localLangConfig = 'es'; // Will display this value
+const lang = localLangConfig || 'en'; // if localLangCongfig is null, then display 'en'
+
+console.log(lang);
+
+
+
+// Exercise 11
+const adventurer = {
+  name: 'Alice',
+};
+
+console.log(adventurer.cat?.name); // Will display that the value is 'undefined' instead of error message
